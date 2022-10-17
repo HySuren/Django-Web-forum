@@ -8,3 +8,8 @@ class Serializers:
         class Meta:
             model = User
             fields = '__all__'
+
+    class ValidatorUser(serializers.ModelSerializer):
+        class Meta:
+            model = User
+            fields = '__all__'

@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>DanielForum</title>
-    <style type="text/css">
    h1 {
     font-size: 145%;
     font-family: Trebuchet MS;
@@ -21,10 +15,7 @@
     margin: 0;
 
    }
-  </style>
-    <style >
-  </style>
-    <style>
+
     .appoinment-header {
         margin: 10;
     }
@@ -37,8 +28,8 @@
  background: black;
  text-align: center; /* Выравнивание по центру */
  vertical-align: text-top;
-}</style>
-    <style type="text/css">
+}
+
    .btn-group button {
   background-color: #14145a;
   margin: -3px;
@@ -67,8 +58,7 @@
 .btn-group button:hover {
   background-color: #3a75c4;
 }
-  </style>
-    <style>
+
         .brd {
     border: 4px ; /* Параметры границы */
     background: #292929; /* Цвет фона */
@@ -135,22 +125,19 @@ input:focus {
 ::-moz-placeholder          {color:#3f3f44; padding-left: 10px;} // Это стили для placeholder
 :-moz-placeholder           {color:#3f3f44; padding-left: 10px;} // Это стили для placeholder
 :-ms-input-placeholder      {color:#3f3f44; padding-left: 10px;} // Это стили для placeholder
-    </style>
-    <style>
-        .btn-group_2 {
-            text-align: right;
-            margin-top: -35px;
-            padding: 8px 20px; /* Некоторый отступ */
 
-        }
-        .bth-group_2 button {
-            background-color: #3a75c4;
-        }
-        .btn button:hover {
-            background-color: #3a75c4;
+btn-group_2 {
+    text-align: right;
+    margin-top: -35px;
+    padding: 8px 20px;
 }
-    </style>
-    <style>
+.bth-group_2 button {
+    background-color: #3a75c4;
+    }
+btn button:hover {
+    background-color: #3a75c4;
+}
+
         .btn {
     display: inline-block; /* Строчно-блочный элемент */
     background: #14145a; /* Серый цвет фона */
@@ -171,37 +158,3 @@ input:focus {
    .btn button:hover {
   background-color: #3a75c4;
 }
-    </style>
-    <style>
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Web-Forum</h1>
-        <div class="btn-group">
-  <button>Главная</button>
-  <button>Форум</button>
-  <button>О разработчике</button>
-        </div>
-        <div class="btn-group_2">
-            <a href="/register/$" class="btn" >Регистрация</a>
-            <a href="/login/$" class="btn">Войти</a>
-        </div>
-    </header>
-    <div class="brd">
-   </div>
-    <div class="form_auth_block">
-  <div class="form_auth_block_content">
-    <p class="form_auth_block_head_text">Регистрация</p>
-    <form class="form_auth_style" action="/create_user/$" method="post">
-        {% csrf_token %}
-      <label>Придумайте логин:</label>
-      <input name="login" placeholder="Логин" required >
-      <label>Придумайте пороль:</label>
-      <input type="int" name="password" placeholder="Пароль" required >
-      <button class="form_auth_button" type="submit" value="send" name="form_auth_submit">Войти</button>
-    </form>
-  </div>
-</div>
-</body>
-</html>

@@ -177,9 +177,9 @@ input:focus {
     <header>
         <h1>Web-Forum</h1>
         <div class="btn-group">
-  <button>Главная</button>
-  <button>Форум</button>
-  <button>О разработчике</button>
+          <a href="/home/$"><button>Главная</button></a>
+          <a href="#"><button>Форум</button></a>
+            <a href="#"><button>О разработчике</button></a>
         </div>
         <div class="btn-group_2">
             <a href="register" class="btn" >Регистрация</a>
@@ -191,7 +191,7 @@ input:focus {
     <div class="form_auth_block">
   <div class="form_auth_block_content">
     <p class="form_auth_block_head_text">Авторизация</p>
-    <form class="form_auth_style" action="postuser/" method="post">
+    <form class="form_auth_style" action="user_cabinet/$" method="get">
         {% csrf_token %}
       <label>Введите Ваш Логин</label>
       <input name="name" placeholder="Логин" required >

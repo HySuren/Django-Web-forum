@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
-    <title>DanielForum</title>
+    <script src="{% static 'animation.js' %}"></script>
+    <title>Личный кабинет</title>
     <style type="text/css">
    h1 {
     font-size: 145%;
@@ -22,7 +24,7 @@
 
    }
   </style>
-    <style >
+    <style>
   </style>
     <style>
     .appoinment-header {
@@ -76,81 +78,6 @@
    }
     </style>
     <style>
-       .form_auth_block{
-    width: 500px;
-    height: 400px;
-    margin: 0 auto;
-    background: #1e3c65;
-    background-size: cover;
-    border-radius: 25px;
-    padding: 2%;
-}
-.form_auth_block_content{
-  padding-top: 10%;
-}
-.form_auth_block_head_text{
-    display: block;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    background: #ffffff;
-    opacity: 0.7;
-}
-.form_auth_block label{
-    display: block;
-    text-align: center;
-    padding: 10px;
-    background: #ffffff;
-    opacity: 0.7;
-    font-weight: 600;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-.form_auth_block input{
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  height: 45px;
-  border-radius: 10px;
-  border:none;
-  outline: none;
-}
-input:focus {
-  color: #000000;
-  border-radius: 20px;
-  border: 2px solid #436fea;
-}
-.form_auth_button{
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 8px;
-    border-radius: 10px;
-    height: 35px;
-    border: none;
-    cursor: pointer;
-}
-::-webkit-input-placeholder {color:#3f3f44; padding-left: 10px;} // Это стили для placeholder
-::-moz-placeholder          {color:#3f3f44; padding-left: 10px;} // Это стили для placeholder
-:-moz-placeholder           {color:#3f3f44; padding-left: 10px;} // Это стили для placeholder
-:-ms-input-placeholder      {color:#3f3f44; padding-left: 10px;} // Это стили для placeholder
-    </style>
-    <style>
-        .btn-group_2 {
-            text-align: right;
-            margin-top: -35px;
-            padding: 8px 20px; /* Некоторый отступ */
-
-        }
-        .bth-group_2 button {
-            background-color: #3a75c4;
-        }
-        .btn button:hover {
-            background-color: #3a75c4;
-}
-    </style>
-    <style>
         .btn {
     display: inline-block; /* Строчно-блочный элемент */
     background: #14145a; /* Серый цвет фона */
@@ -173,6 +100,72 @@ input:focus {
 }
     </style>
     <style>
+        .container {
+    display: inline-block;
+    cursor: pointer;
+    text-align: top;
+    margin-right: -1100px;
+    padding: 25px 3px;
+    margin-top: -120px;
+    border: 4px ;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+ .event .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.event .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.event .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+    </style>
+    <style>
+/* Контейнер <div> - нужен для позиционирования выпадающего контента */
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+/* Выпадающий контент (по умолчанию скрыт) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  z-index: 1;
+}
+
+/* Ссылки внутри выпадающего блока */
+.dropdown-content a {
+  color: black;
+  padding: 12px 4px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Изменяем цвет ссылки при наведении */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Показываем выпадающий блок при нажатии */
+.container:hover .dropdown-content {
+  display: block;
+}
     </style>
 </head>
 <body>
@@ -183,25 +176,19 @@ input:focus {
   <button>Форум</button>
   <button>О разработчике</button>
         </div>
-        <div class="btn-group_2">
-            <a href="/register/$" class="btn" >Регистрация</a>
-            <a href="/login/$" class="btn">Войти</a>
+        <div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+             <div class="dropdown-content">
+    <a href="#">Ссылка 1</a>
+    <a href="#">Ссылка 2</a>
+    <a href="#">Ссылка 3</a>
+  </div>
         </div>
     </header>
     <div class="brd">
    </div>
-    <div class="form_auth_block">
-  <div class="form_auth_block_content">
-    <p class="form_auth_block_head_text">Регистрация</p>
-    <form class="form_auth_style" action="/create_user/$" method="post">
-        {% csrf_token %}
-      <label>Придумайте логин:</label>
-      <input name="login" placeholder="Логин" required >
-      <label>Придумайте пороль:</label>
-      <input type="int" name="password" placeholder="Пароль" required >
-      <button class="form_auth_button" type="submit" value="send" name="form_auth_submit">Войти</button>
-    </form>
-  </div>
 </div>
 </body>
 </html>

@@ -1,4 +1,6 @@
 from pathlib import Path
+import os
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -60,6 +62,14 @@ TEMPLATES = [
     },
 ]
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'Forum', 'static'),
+)
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# доступ к файлам по урл
+STATIC_URL = '/static/'
+
+COMPRESS_ENABLED = True
 WSGI_APPLICATION = 'Forum.wsgi.application'
 
 
