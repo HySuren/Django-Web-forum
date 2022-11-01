@@ -1,0 +1,165 @@
+        h1 {
+            font-size: 145%;
+            font-family: Trebuchet MS;
+            color: #222;
+            text-shadow:-1px -1px #000,0 1px 0 #444;
+            text-align: left;
+            padding: 25px 24px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 145%;
+            font-family: Trebuchet MS;
+            color: #ffd700;
+            text-align: midle;
+            padding: 600px 250px
+            margin: 0;
+
+        }
+
+
+
+.appoinment-header {
+            margin: 10;
+        }
+
+        body {
+            margin: 0;
+            background: #292929;
+        }
+
+        header {
+            position: relative ;
+            padding: 10px -15px
+            line-height: -190px;
+            height: 100px; /* Высота шапки */
+            background: #E6E6FA ;
+            text-align: center; /* Выравнивание по центру */
+            vertical-align: text-top;
+            margin: -10px;
+            opacity: 0.95;
+        }
+
+
+.btn-group a {
+            margin: -3px;
+            font-family: Trebuchet MS;
+            margin-top: -30px !important;
+            color: black; /* Белый текст */
+            padding: 9px 50px; /* Некоторый отступ */
+            text-decoration: none;
+            float: left 10px; /* Выстраиваем кнопки рядом друг с другом */
+            vertical-align: text-top;
+        }
+
+
+        /* Добавляем фон при наведении курсора */
+        .btn-group a:hover {
+            border-bottom: 2px solid maroon;
+            padding-bottom: 2px;
+        }
+
+
+.brd {
+            border: 4px; /* Параметры границы */
+            background: #292929; /* Цвет фона */
+            padding: 15px; /* Поля вокруг текста */
+        }
+
+
+.container {
+            display: inline-block;
+            cursor: pointer;
+            text-align: top;
+            margin-right: -1100px;
+            padding: 25px 3px;
+            margin-top: -120px;
+            border: 4px;
+        }
+
+        .bar1, .bar2, .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 5px 0;
+            transition: 0.4s;
+        }
+
+        /* Rotate first bar */
+        .event .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        /* Fade out the second bar */
+        .event .bar2 {
+            opacity: 0;
+        }
+
+        /* Rotate last bar */
+        .event .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+
+/* Контейнер <div> - нужен для позиционирования выпадающего контента */
+        .dropdown {
+            position: absolute;
+            display: inline-block;
+        }
+
+        /* Выпадающий контент (по умолчанию скрыт) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 120px;
+            z-index: 1;
+        }
+
+        /* Ссылки внутри выпадающего блока */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 4px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Изменяем цвет ссылки при наведении */
+        .dropdown-content a:hover {
+            background-color: #ddd
+        }
+
+        /* Показываем выпадающий блок при нажатии */
+        .container:hover .dropdown-content {
+            display: block;
+        }
+
+        .user_info {
+            width: 500px;
+            height: 400px;
+            margin: 0 auto;
+            background: #2F4F4F;
+            background-size: cover;
+            border-radius: 25px;
+            padding: 2%;
+            opacity: 0.50;
+        }
+        .login {
+            border-radius: 0px;
+            margin: 0 auto;
+            border: 0px;
+            left: 25px;
+        }
+        .login_info {
+            position: relative ;
+            border-radius: 0px;
+            margin: 0 auto;
+            border: 0px;
+            right: -68px;
+            top: -22.5px;
+            color: #E6E6FA;
+            font-family: corbel;
+        }

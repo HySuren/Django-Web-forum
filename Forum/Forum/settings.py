@@ -1,7 +1,6 @@
 from pathlib import Path
 import os
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -40,11 +39,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'Forum.urls'
 
-DIR_TEMPLATES = ['C://Users//ruslan//PycharmProjects//venv//Forum//Forum//Templates//']
+DIR_TEMPLATES = [f'{os.getcwd()}/Forum/Templates//']
 
 TEMPLATES = [
     {
@@ -62,6 +62,7 @@ TEMPLATES = [
     },
 ]
 
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'Forum', 'static'),
 )
@@ -69,17 +70,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # доступ к файлам по урл
 STATIC_URL = '/static/'
 
-COMPRESS_ENABLED = True
-WSGI_APPLICATION = 'Forum.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'db3.sqlite3',
     }
 }
 
@@ -118,9 +113,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = f'Static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+LOGIN_URL = 'user_cabinet'

@@ -1,0 +1,237 @@
+ h1 {
+            font-size: 145%;
+            font-family: Trebuchet MS;
+            color: #ffd700;
+            text-align: left;
+            padding: 25px 24px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 145%;
+            font-family: Trebuchet MS;
+            color: #ffd700;
+            text-align: midle;
+            padding: 600px 250px
+            margin: 0;
+        }
+
+.appoinment-header {
+            margin: 10;
+        }
+
+        body {
+            margin: 0;
+            background: #292929;
+        }
+
+        header {
+            height: 100px; /* Высота шапки */
+            background: black;
+            text-align: center; /* Выравнивание по центру */
+            vertical-align: text-top;
+        }
+
+.btn-group button {
+            background-color: #14145a;
+            margin: -3px;
+            margin-top: -30px !important;
+            border: 5px #78866b;
+            color: white; /* Белый текст */
+            padding: 9px 50px; /* Некоторый отступ */
+            cursor: pointer; /* Иконка указателя/руки */
+            border-radius: 2px;
+            float: left 10px; /* Выстраиваем кнопки рядом друг с другом */
+            vertical-align: text-top;
+        }
+
+        .btn-group button:not(:last-child) {
+            border-right: none; /* Исключаем двойную рамку */
+        }
+
+        /* Сбрасываем обтекание (clearfix hack) */
+        .btn-group:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Добавляем фон при наведении курсора */
+        .btn-group button:hover {
+            background-color: #3a75c4;
+        }
+.brd {
+            border: 4px; /* Параметры границы */
+            background: #292929; /* Цвет фона */
+            padding: 15px; /* Поля вокруг текста */
+        }
+
+.form_auth_block {
+            width: 500px;
+            height: 400px;
+            margin: 0 auto;
+            background: #1e3c65;
+            background-size: cover;
+            border-radius: 25px;
+            padding: 2%;
+        }
+
+        .form_auth_block_content {
+            padding-top: 10%;
+        }
+
+        .form_auth_block_head_text {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            background: #ffffff;
+            opacity: 0.7;
+        }
+
+        .form_auth_block label {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background: #ffffff;
+            opacity: 0.7;
+            font-weight: 600;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .form_auth_block input {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            height: 45px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+
+        input:focus {
+            color: #000000;
+            border-radius: 20px;
+            border: 2px solid #436fea;
+        }
+
+        .form_auth_button {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 8px;
+            border-radius: 10px;
+            height: 35px;
+            border: none;
+            cursor: pointer;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #3f3f44;
+            padding-left: 10px;
+        }
+
+        /
+        /
+        Это стили для placeholder
+        ::-moz-placeholder {
+            color: #3f3f44;
+            padding-left: 10px;
+        }
+
+        /
+        /
+        Это стили для placeholder
+        :-moz-placeholder {
+            color: #3f3f44;
+            padding-left: 10px;
+        }
+
+        :-ms-input-placeholder {
+            color: #3f3f44;
+            padding-left: 10px;
+        }
+
+.btn-group_2 {
+            text-align: right;
+            margin-top: -35px;
+            padding: 8px 20px; /* Некоторый отступ */
+
+        }
+
+        .bth-group_2 button {
+            background-color: #3a75c4;
+        }
+
+        .btn button:hover {
+            background-color: #3a75c4;
+        }
+.btn {
+            display: inline-block; /* Строчно-блочный элемент */
+            background: #14145a; /* Серый цвет фона */
+            height: 10px;
+            width: 9%;
+            color: #fff; /* Белый цвет текста */
+            padding: 12px 3px; /* Поля вокруг текста */
+            text-align: center;
+            margin-top: -45px;
+
+            cursor: pointer;
+            text-decoration: none; /* Убираем подчёркивание */
+            border-radius: 5px; /* Скругляем уголки */
+        }
+
+        .bth button {
+            background-color: #3a75c4;
+        }
+
+        .btn button:hover {
+            background-color: #3a75c4;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

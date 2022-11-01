@@ -4,24 +4,22 @@
     {% load static %}
     <meta charset="UTF-8">
     <title>DanielForum</title>
-    <link rel="stylesheet" href= "{% static 'home.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'home.css' %}" type="text/css"/>
 </head>
 <body>
-    <header>
-        <h1>Web-Forum</h1>
-        <div class="btn-group">
-          <a href="/home/$"><button>Главная</button></a>
-          <a href="#"><button>Форум</button></a>
-            <a href="#"><button>О разработчике</button></a>
-        </div>
-        <div class="btn-group_2">
-            <a href="register" class="btn" >Регистрация</a>
-            <a href="login" class="btn">Войти</a>
-        </div>
-    </header>
-    <div class="brd">
-   </div>
-  </div>
+<header>
+    <h1>Web-Forum</h1>
+    <div class="btn-group">
+        <a href="/home">Главная</a>
+        <a href="#">Форум</a>
+        <a href="#">О разработчике</a>
+    </div>
+    <div class="btn-group_2">
+        <a href="/register" class="btn">Регистрация</a>
+        <a href="/login" class="btn">Войти</a>
+    </div>
+</header>
+<div class="brd">
 </div>
 </body>
 </html>

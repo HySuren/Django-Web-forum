@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
     {% load static %}
     <meta charset="UTF-8">
     <script src="{% static 'animation.js' %}"></script>
@@ -12,28 +19,22 @@
     <h1>Web-Forum</h1>
     <div class="btn-group">
         <a href="/home">Главная</a>
-        <a>Форум</a>
-        <a>О разработчике</a>
+        <a href="#">Форум</a>
+        <a href="#">О разработчике</a>
     </div>
     <div class="container" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
         <div class="dropdown-content">
-            <a href="/user_cabinet" method="POST">Профиль</a>
+            <a href="/user_cabinet">Профиль</a>
             <a href="#">Мои посты</a>
             <a href="/is_online" name="exit" method="POST">Выйти</a>
         </div>
     </div>
 </header>
 <div class="brd"></div>
-    {% for i in info %}
-<div class="user_info">
-    <tr class='success'>
-        <h3 class="login">Логин: </h3>
-        <h3 class="login_info">{{ i.login }}</h3>
-    </tr>
-</div>
-{% endfor %}
+</body>
+</html>
 </body>
 </html>
