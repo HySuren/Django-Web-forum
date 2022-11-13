@@ -1,6 +1,6 @@
 from Forum_app.views import urls_all
 from django.urls import re_path
-from.models import User
+
 
 app_name = 'Forum_app'
 urlpatterns = [
