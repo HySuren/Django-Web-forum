@@ -3,9 +3,9 @@ from .models import User
 import random
 
 array = {
-    'login': 'joki',
-    'password': 'qwerty123',
-    'keys_id': 99999,
+    'login': '',
+    'password': '',
+    'keys_id': 0,
     'is_active': False,
 }
 
